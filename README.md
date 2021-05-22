@@ -1,1 +1,2 @@
 # isl
+install mediapipe ,opencv
