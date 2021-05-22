@@ -87,7 +87,7 @@ def detect(frame):
                                 , (10,20), cv2.FONT_HERSHEY_TRIPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
             cv2.putText(image, str(round(sign_language_prob[np.argmax(sign_language_prob)],2))
                                 , (10,50), cv2.FONT_HERSHEY_TRIPLEX, 0.8, (255, 255, 255), 2, cv2.LINE_AA)
-        cv2.imshow('webcam feed',image)
+        return image
         
     #cap.release()
     cv2.destroyAllWindows()
